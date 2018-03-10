@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\Commands.cs" />
+    <Compile Include="Commands\CustomCommands.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +77,18 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{48ce5f5e-3ef2-4139-a9e2-efc6678f4204}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleCodeJam\GoogleCodeJam.csproj">
+      <Project>{623996af-44c2-46fb-af80-1a53e541e50e}</Project>
+      <Name>GoogleCodeJam</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InterviewCake\Interview Questions.csproj">
+      <Project>{28151ba8-1ca0-4d76-acf9-e203d5fdeaad}</Project>
+      <Name>Interview Questions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RandomConsoleUtility\RandomConsoleUtility.csproj">
+      <Project>{624d4154-d9f3-4f80-bec8-b0714a6e19bd}</Project>
+      <Name>RandomConsoleUtility</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
