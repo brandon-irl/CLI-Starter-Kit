@@ -92,7 +92,9 @@ namespace CLIStarterKit
 					BindingFlags.InvokeMethod | BindingFlags.Static | BindingFlags.Public,
 					null,
 					null,
-					command.Arguments.ZipAll(parameterInfo, (a, b) => Convert.ChangeType(a == default(string) ? b.DefaultValue : a, b.ParameterType)).ToArray());
+					command.Arguments
+						.Take(parameterInfo.Count())
+						.ZipAll(parameterInfo, (a, b) => Convert.ChangeType(a == default(string) ? b.DefaultValue : a, b.ParameterType)).ToArray());
 			}
 			catch (TargetInvocationException ex)
 			{
